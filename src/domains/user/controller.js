@@ -53,7 +53,7 @@ const createNewUser = async (data) => {
       const newUser = new User({
         name,
         email,
-        password: hashedPassword,
+        password: hashedPassword,  
       });
 
       // save user

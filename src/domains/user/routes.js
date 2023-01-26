@@ -45,6 +45,7 @@ router.post('/signup', async (req, res) => {
         } else if (password.length < 8) {
             throw Error('Password is too short!');
         } else {
+            
             //good credentials, create new user
             const newUser = await createNewUser({
                 name,
